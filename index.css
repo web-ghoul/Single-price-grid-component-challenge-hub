@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+
+.main .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: fit-content;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px;
+}
+
+.box {
+    width: 680px;
+    height: fit-content;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 0;
+    box-shadow: 2px 2px 10px 5px hsl(218, 57%, 91%);
+}
+
+.box .top {
+    height: 220px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    background-color: #fff;
+}
+
+.box .top h2 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.box .top .info {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.box .top .info h4 {
+    color: hsl(71, 73%, 54%);
+    font-size: 18px;
+}
+
+.box .top .info p {
+    font-size: 16px;
+    color: hsl(218, 22%, 67%);
+    line-height: 1.7;
+}
+
+.box .bottom {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+}
+
+.box .bottom>div {
+    height: 260px;
+    padding: 40px;
+}
+
+.box .bottom>div>h4 {
+    font-size: 20px;
+    color: #fff;
+}
+
+.box .bottom .left {
+    background-color: hsl(179, 62%, 43%);
+    display: grid;
+    justify-content: stretch;
+    align-items: center;
+    gap: 20px;
+}
+
+.box .bottom .left .number {
+    display: grid;
+    justify-content: stretch;
+    align-items: center;
+    gap: 10px;
+}
+
+.box .bottom .left .number>div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.box .bottom .left .number>div .num {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.box .bottom .left .number p,
+.box .bottom .left .number>div span {
+    color: hsl(204, 43%, 93%);
+}
+
+.box .bottom .left button {
+    outline: none;
+    border: none;
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 5px hsl(179, 75%, 37%);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.box .bottom .right {
+    background-color: hsl(179, 60%, 52%);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: hsl(204, 43%, 93%);
+    align-self: stretch;
+}
+
+.box .bottom .right p {
+    line-height: 1.7;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width:992px) {
+    .box {
+        width: 650px;
+        border-radius: 8px;
+    }
+    .box .top {
+        height: 200px;
+        padding: 30px;
+        gap: 15px;
+    }
+    .box .top h2 {
+        font-size: 22px;
+    }
+    .box .top .info {
+        gap: 10px;
+    }
+    .box .top .info p {
+        font-size: 16px;
+    }
+    .box .bottom {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .box .bottom>div {
+        height: 250px;
+        padding: 30px;
+    }
+    .box .bottom>div>h4 {
+        font-size: 18px;
+        color: #fff;
+    }
+    .box .bottom .left {
+        gap: 15px;
+    }
+    .box .bottom .left .number {
+        gap: 10px;
+    }
+    .box .bottom .left .number>div {
+        gap: 10px;
+    }
+    .box .bottom .left .number>div .num {
+        font-size: 25px;
+    }
+    .box .bottom .left button {
+        padding: 12px;
+        font-size: 15px;
+    }
+    .box .bottom .right {
+        gap: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    .box {
+        width: 320px;
+        border-radius: 5px;
+    }
+    .box .top {
+        height: 180px;
+        padding: 20px;
+        gap: 10px;
+    }
+    .box .top h2 {
+        font-size: 20px;
+    }
+    .box .top .info {
+        gap: 5px;
+    }
+    .box .top .info h4 {
+        font-size: 18px;
+    }
+    .box .top .info p {
+        font-size: 12px;
+    }
+    .box .bottom {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box .bottom>div {
+        height: 200px;
+        padding: 25px;
+    }
+    .box .bottom>div>h4 {
+        font-size: 15px;
+        color: #fff;
+    }
+    .box .bottom .left {
+        gap: 10px;
+    }
+    .box .bottom .left .number {
+        gap: 5px;
+    }
+    .box .bottom .left .number>div {
+        gap: 10px;
+    }
+    .box .bottom .left .number>div .num {
+        font-size: 22px;
+    }
+    .box .bottom .left .number>div span {
+        font-size: 12px;
+    }
+    .box .bottom .left .number p {
+        font-size: 12px;
+    }
+    .box .bottom .left button {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .box .bottom .right {
+        gap: 10px;
+    }
+    .box .bottom .right p {
+        font-size: 12px;
+    }
+}
